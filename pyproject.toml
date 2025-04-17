@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.22"]
+build-backend = "hatchling.build"
+
+[project]
+name = "voicegram"
+version = "0.0.1"
+description = "Lightweight Python library that turns any audio file into a Telegram voice note (.ogg/Opus) — and back."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Nikita Protect", email = "t_frymex@proton.me" }]
+
+dependencies = [
+    "pydub>=0.25",
+    "opuslib>=3.0",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+"Homepage"   = "https://github.com/frymex/voicegram"
+"Changelog"  = "https://github.com/frymex/voicegram/blob/main/CHANGELOG.md"
+"Issues"     = "https://github.com/frymex/voicegram/issues"
+
+[tool.hatch.build]
+packages = ["src/voicegram"]
