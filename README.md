@@ -58,14 +58,14 @@ vc.opus_to_mp3("voice.ogg")          # → voice.mp3
 
 Additionally, top‑level helpers `mp3_to_opus()` and `opus_to_mp3()` proxy to a shared converter instance.
 
-Full docs live in the [wiki](https://github.com/yourname/voicegram/wiki).
+Full docs live in the [wiki](https://github.com/frymex/voicegram/wiki).
 
 ---
 
 ## Development
 
 ```bash
-git clone https://github.com/yourname/voicegram
+git clone https://github.com/frymex/voicegram
 cd voicegram
 python -m venv .venv && source .venv/bin/activate
 pip install -e .[dev]      # pytest, black, mypy, pre‑commit …
